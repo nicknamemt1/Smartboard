@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Switch Board Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #2196F3;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #1976D2;
+            margin: 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2196F3;
+        }
+
+        h3 {
+            color: #2196F3;
+            margin: 15px 0;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f5f5f5;
+        }
+
+        .component {
+            margin-bottom: 20px;
+        }
+
+        .component h3 {
+            color: #1976D2;
+        }
+
+        .feature-list {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .feature-list li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .feature-list li:before {
+            content: "•";
+            color: #2196F3;
+            position: absolute;
+            left: -15px;
+        }
+
+        .flow-diagram {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .flow-diagram img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-microchip"></i>
+                <span>SmartBoard</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#components">Components</a></li>
+                <li><a href="#working">Working</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <h1>DESIGN AND FABRICATION OF BLUETOOTH AND WI-FI CONTROL SYSTEM OF VARIOUS DOMESTIC APPLIANCES</h1>
+    </header>
+
+    <div class="section">
+        <h2>OBJECTIVE</h2>
+        <p>Smart Switch Board is a multipurpose home automation device built around the ESP32 microcontroller. It controls two sockets via relays and receives input from two manual switches. The system supports three control modes: Bluetooth, MQTT (via EMQX broker), and a local web server.</p>
+    </div>
+
+    <div class="section">
+        <h2>HARDWARE AND COMPONENTS</h2>
+        <table>
+            <tr>
+                <th>S.NO</th>
+                <th>NAME AND DESCRIPTION</th>
+                <th>No/length</th>
+                <th>RATE</th>
+                <th>TOTAL</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ESP32 : MICROCONTROLLER</td>
+                <td>1</td>
+                <td>₹350</td>
+                <td>₹350</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>RELAY MODULE</td>
+                <td>2</td>
+                <td>₹100</td>
+                <td>₹200</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>PUSH BUTTON</td>
+                <td>1</td>
+                <td>₹30</td>
+                <td>₹30</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>PUSH SWITCH</td>
+                <td>2</td>
+                <td>₹50</td>
+                <td>₹100</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>SOCKET</td>
+                <td>2</td>
+                <td>₹40</td>
+                <td>₹80</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>JUMPER WIRES</td>
+                <td>20</td>
+                <td>₹5</td>
+                <td>₹100</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>5v POWER ADAPTER</td>
+                <td>1</td>
+                <td>₹150</td>
+                <td>₹150</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>WIRES</td>
+                <td>3m</td>
+                <td>₹20</td>
+                <td>₹60</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>OUTER BODY</td>
+                <td>1</td>
+                <td>₹100</td>
+                <td>₹100</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: right;"><strong>TOTAL</strong></td>
+                <td><strong>₹1170</strong></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section" id="components">
+        <h2>Components</h2>
+        <div class="component">
+            <h3>ESP32 MICROCONTROLLER</h3>
+            <p>ESP32 is a popular, low-cost, low-power Wi-Fi and Bluetooth-enabled microcontroller developed by Espressif Systems. It is widely used in Internet of Things (IoT) projects due to its versatility, strong processing power, and wireless connectivity.</p>
+            
+            <h4>Key Features of ESP32:</h4>
+            <ul class="feature-list">
+                <li>Dual-Core Processor: 32-bit Xtensa LX6 dual-core (or single-core in some variants), clocked up to 240 MHz</li>
+                <li>Wireless Connectivity: Wi-Fi (802.11 b/g/n) and Bluetooth (Classic and BLE)</li>
+                <li>Memory: 520KB SRAM and 4MB Flash memory</li>
+                <li>Peripherals & Interfaces: Up to 36 programmable GPIOs, Analog Inputs, Digital Interfaces, Touch Sensors, Hall Effect Sensor, DAC</li>
+                <li>Low Power Modes: Supports deep sleep mode (~10μA)</li>
+            </ul>
+        </div>
+
+        <div class="component">
+            <h3>Relay Module</h3>
+            <p>A relay module is an electrically operated switch that allows a low-power signal from a microcontroller to control high-power circuits like lights, motors, or appliances. It provides safe isolation between the control circuit and the load circuit.</p>
+        </div>
+
+        <div class="component">
+            <h3>Push Button/Switch</h3>
+            <p>A push button is a type of electrical switch that makes or breaks a connection only while it is being pressed. As soon as you release the button, the connection is broken again. It is a momentary switch, meaning it works only temporarily while being pressed.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>TECHNOLOGIES USED</h2>
+        <ul class="feature-list">
+            <li>MQTT (Message Queuing Telemetry Transport)</li>
+            <li>AP (Access Point)</li>
+            <li>BLE (Bluetooth Low Energy)</li>
+        </ul>
+    </div>
+
+    <div class="section" id="working">
+        <h2>Working</h2>
+        <p>The Smart Board is an intelligent control system built around the ESP32 microcontroller, designed to provide flexible and reliable control of electrical devices through multiple interfaces including web, Bluetooth, and manual switches.</p>
+        
+        <h3>System Overview</h3>
+        <p>The system consists of:</p>
+        <ul class="feature-list">
+            <li>ESP32 Microcontroller (Main Controller)</li>
+            <li>Two Relay Outputs</li>
+            <li>Two Manual Switches</li>
+            <li>One Mode Selection Button</li>
+            <li>One Status LED</li>
+            <li>Multiple Communication Interfaces (WiFi, BLE, MQTT)</li>
+        </ul>
+
+        <h3>Operating Modes</h3>
+        <ol class="feature-list">
+            <li>Access Point (AP) Mode
+                <ul>
+                    <li>Creates its own WiFi network</li>
+                    <li>Web interface accessible through SSID: SmartBoard_AP, Password: 12345678</li>
+                    <li>Direct control without internet</li>
+                </ul>
+            </li>
+            <li>Wi-Fi + MQTT Mode
+                <ul>
+                    <li>Connects to existing WiFi network</li>
+                    <li>MQTT broker connection</li>
+                    <li>Remote control capability</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="section" id="downloads">
+        <h2>Downloads</h2>
+        <div class="download-grid">
+            <div class="download-card">
+                <i class="fas fa-file-pdf"></i>
+                <h3>Project Report</h3>
+                <p>Complete project documentation and specifications</p>
+                <a href="Document.pdf" class="download-btn" download>Download PDF</a>
+            </div>
+            <div class="download-card">
+                <i class="fas fa-code"></i>
+                <h3>ESP32 Source Code</h3>
+                <p>Complete ESP32 firmware and circuit diagrams</p>
+                <a href="download/smartboard.zip" class="download-btn" download>Download ZIP</a>
+            </div>
+            <div class="download-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>App Source Code</h3>
+                <p>Mobile application source code and documentation</p>
+                <a href="download/smartapp.zip" class="download-btn" download>Download ZIP</a>
+            </div>
+            <div class="download-card">
+                <i class="fas fa-download"></i>
+                <h3>SmartBoard App</h3>
+                <p>Download the mobile application for your device</p>
+                <a href="download/SmartBoard.apk" class="download-btn" download>Download APK</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 SmartBoard Control System</p>
+    </footer>
+</body>
+</html> 
